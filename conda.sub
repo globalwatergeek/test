@@ -1,5 +1,6 @@
 # template.sub
 # starter submit file for CHTC jobs
+# import conda environment
 
 universe = vanilla
 log = job_$(Cluster).log
@@ -11,7 +12,8 @@ arguments = hello conda
 
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
-transfer_input_files = 
+transfer_input_files = py-dat-sci.tar.gz
+requirements = (OpSysMajorVer =?= 7)
 
 request_cpus = 1
 request_memory = 1GB
