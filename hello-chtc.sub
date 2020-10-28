@@ -7,7 +7,7 @@ error = job_$(Cluster)_$(Process).err
 output = job_$(Cluster)_$(Process).out
 
 executable = hello-chtc.sh
-arguments = $(Process)
+arguments = Hello, Kate! This is your submit file.
 
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
